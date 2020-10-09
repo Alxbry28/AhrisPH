@@ -1,15 +1,21 @@
-<h1 class="mb-2"> Customer Information </h1>
+<h1 class="mb-2"> Supplier Information </h1>
                                     <div class="card mb-4">
                                         <!-- Card body -->
                                         <div class="card-body">
                                           <!-- Form groups used in grid -->
                                           <div class="row">
-                                            <div class="col-md-6">
+                                            <div class="col-md-3">
                                               <div class="form-group">
-                                                <label class="form-control-label" for="example3cols1Input">Company Name</label>
+                                                <label class="form-control-label" for="example3cols1Input">First Name</label>
                                                 <input type="text" class="form-control" id="example3cols1Input">
                                               </div>
                                             </div>
+                                            <div class="col-md-3">
+                                                <div class="form-group">
+                                                  <label class="form-control-label" for="example3cols1Input">Last Name</label>
+                                                  <input type="text" class="form-control" id="example3cols1Input">
+                                                </div>
+                                              </div>
                                             <div class="col-md-6">
                                               <div class="form-group">
                                                 <label class="form-control-label" for="example3cols2Input">Email</label>
@@ -203,7 +209,7 @@
                                           </div>
 
                                         {{-- Financial column --}}
-                                          <div class="row">
+                                        <div class="row">
                                             <div class="col-md">
                                               <div class="form-group">
                                                 <label class="form-control-label">Financial Details</label>
@@ -238,17 +244,29 @@
                                                 </div>
                                               </div>
                                           </div>
+                                          <h1 class="mb-2"> Payment Details </h1>
                                           <div class="row">
-                                              <div class="col-md-10">
-                                                <div class="form-group">
-                                                    <a href="#"> Cancel </a>
+                                            <div class="col-md-6">
+                                                <label class="form-control-label" for="example2cols2Input">Bank</label>
+                                                <input type="text" class="form-control" id="example2cols2Input" placeholder="">
+                                            </div>
+                                                <div class="col-md-6">
+                                                    <label class="form-control-label" for="example2cols2Input">Account Number</label>
+                                                    <input type="number" class="form-control" id="example2cols2Input" placeholder="6431245794643425">
                                                 </div>
-                                              </div>
-                                              <div class="col-md-2">
-                                                <div class="form-group">
-                                                    <button type="button" class="btn btn-primary text-right">Save</button>
-                                                </div>
+                                          </div>
+                                          </div>
+                                          <div class="row">
+                                            <div class="col-md-10">
+                                              <div class="form-group">
+                                                  <a href="#"> Cancel </a>
                                               </div>
                                             </div>
+                                            <div class="col-md-2">
+                                              <div class="form-group">
+                                                  <button type="button" class="btn btn-primary text-right">Save</button>
+                                              </div>
+                                            </div>
+                                          </div>
                                           </div>
                                       </div>

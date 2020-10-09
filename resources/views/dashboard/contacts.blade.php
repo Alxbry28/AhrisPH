@@ -120,10 +120,10 @@
                                 <div class="tab-content tab-space">
                                   <div class="tab-pane fade active show" id="business">
                                         @include('layouts.customer-business')
-
+                                  </div>
                                   {{-- Column for Individual --}}
                                   <div class="tab-pane fade" id="individual">
-                                    @include('layouts.customer-individual')
+                                         @include('layouts.customer-individual')
                                   </div>
                                 </div>
                             </div>
@@ -131,12 +131,43 @@
                     </div>
                     {{-- Suppliers Card Tab --}}
                     <div class="tab-pane fade" id="tabs-icons-text-3" role="tabpanel" aria-labelledby="tabs-icons-text-3-tab">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <ul class="nav mb-3" id="tabs_3" role="tablist">
+                                  <li class="nav-item">
+                                    <a class="nav-link" id="first-tab" data-toggle="tab" href="#supplier_business" role="tab" aria-selected="true">
+                                        <div class="custom-control custom-radio mb-3">
+                                            <input name="custom-radio-1" class="custom-control-input" id="customRadio3" type="radio">
+                                            <label class="custom-control-label" for="customRadio3">Business</label>
+                                          </div>
 
+                                    </a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" id="second-tab" data-toggle="tab" href="#supplier_individual" role="tab" aria-selected="">
+                                        <div class="custom-control custom-radio mb-3">
+                                            <input name="custom-radio-1" class="custom-control-input" id="customRadio4" type="radio">
+                                            <label class="custom-control-label" for="customRadio4">Individual</label>
+                                          </div>
+                                    </a>
+                                  </li>
+                                </ul>
+                                    {{-- Column for Business --}}
+                                <div class="tab-content tab-space">
+                                  <div class="tab-pane fade active show" id="supplier_business">
+                                        @include('layouts.supplier-business')
+                                  </div>
+                                  {{-- Column for Individual --}}
+                                  <div class="tab-pane fade" id="supplier_individual">
+                                         @include('layouts.supplier-individual')
+                                  </div>
+                                </div>
+                            </div>
+                          </div>
                     </div>
                 </div>
         </div>
     </div>
-  </div>
 
    @extends('layouts.asset-js')
 

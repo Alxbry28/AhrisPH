@@ -1,4 +1,4 @@
-<h1 class="mb-2"> Customer Information </h1>
+<h1 class="mb-2"> Supplier Information </h1>
                                     <div class="card mb-4">
                                         <!-- Card body -->
                                         <div class="card-body">
