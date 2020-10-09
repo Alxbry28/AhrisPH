@@ -22,7 +22,13 @@ Route::get('/blogs', function () {
 Auth::routes(['verify' => true]);
 // Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/user', 'UserController@index')->name('user');
-Route::get('/user/settings', 'UserController@userSettings')->name('user');
+Route::get('/sales', 'UserController@userSales')->name('user');
+Route::get('/purchases', 'UserController@userPurchases')->name('user');
+Route::get('/accounting', 'UserController@userAccounting')->name('user');
+Route::get('/reports', 'UserController@userContacts')->name('user');
+Route::get('/contacts', 'UserController@userContacts')->name('user');
+Route::get('/taxes', 'UserController@userTaxes')->name('user');
+Route::get('/settings', 'UserController@userSettings')->name('user');
 Route::get('/user/personal-settings', 'UserController@userPersonalSettings')->name('user');
 Route::get('/user/company', 'UserController@companyDashboard')->name('user');
 Route::get('/user/company/organization-settings', 'UserController@companyOrganizationSettings')->name('user');
@@ -32,7 +38,7 @@ Route::get('/user/company/record-product-services', 'UserController@companyRecor
 Route::get('/user/company/record-suppliers', 'UserController@companyRecordSuppliers')->name('user');
 Route::get('/user/company/tax-rate', 'UserController@companyTaxRate')->name('user');
 Route::get('/user/company/record-users', 'UserController@companyRecordUsers')->name('user');
-Route::get('/user/update/profile', 'UserController@update')->name('user');
+Route::post('/user/update/profile', 'UserController@update')->name('user');
 Route::get('/logout', 'UserController@logout')->name('user');
 // Route::get('/logout', 'UserController@companyRecordProductServices')->name('user');
 

@@ -19,14 +19,14 @@
       <div class="container-fluid d-flex align-items-center">
         <div class="row">
           <div class="col-lg-7 col-md-10">
-            
-            <h1 class="display-2 text-white">Hello {{$user->firstname}}</h1> 
+
+            <h1 class="display-2 text-white">Hello {{$user->firstname}}</h1>
             <p class="text-white mt-0 mb-5">This is your profile page. You can see the progress you've made with your work and manage your projects or assigned tasks</p>
           </div>
         </div>
       </div>
     </div>
-    
+
     <!-- Page content -->
     <div class="container-fluid mt--9" style="background-color: #e3e3e3">
       <div class="row">
@@ -90,9 +90,9 @@
                   <h3 class="mb-0">Edit profile </h3>
                 </div>
                 <div class="col-4 text-right">
-                 
+
                   {{-- <a href="#!" id="save-user-profile" class="btn btn-sm btn-primary">Save</a> --}}
-                <form action="/update/profile" method="post">
+                <form action="/user/update/profile" method="post">
                   @csrf
                 <input type="hidden" name="id" value="{{$user->id}}">
                   <button id="save-user-profile" class="btn btn-sm btn-primary" type="submit">Save</button>
@@ -100,7 +100,7 @@
               </div>
             </div>
             <div class="card-body">
-             
+
                 <h6 class="heading-small text-muted mb-4">User information</h6>
                 <div class="pl-lg-4">
                   <div class="row">

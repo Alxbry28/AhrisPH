@@ -114,7 +114,7 @@
 
           </div>
         </div>
-  
+
 
       <!-- Footer -->
       @include('layouts.footer')

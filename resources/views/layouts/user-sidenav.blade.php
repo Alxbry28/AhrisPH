@@ -20,7 +20,7 @@
         <!-- Collapse -->
         <div class="collapse navbar-collapse" id="sidenav-collapse-main">
           <!-- Nav items -->
-          <h6 class="navbar-heading p-0 text-muted">Admin Dashboard</h6>
+          <h6 class="navbar-heading p-0 text-muted">User Dashboard</h6>
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" href="home">
@@ -30,62 +30,54 @@
             </li>
 
              <li class="nav-item">
-              <a class="nav-link" href="ar-analytics">
+              <a class="nav-link" href="sales">
                 <i class="ni ni-sound-wave text-info"></i>
-                <span class="nav-link-text">Analytics</span>
+                <span class="nav-link-text">Sales</span>
               </a>
             </li>
 
              <li class="nav-item">
-              <a class="nav-link" href="ar-web-updates">
+              <a class="nav-link" href="purchases">
                 <i class="ni ni-app text-blue"></i>
-                <span class="nav-link-text">Web App Updates</span>
+                <span class="nav-link-text">Purchases</span>
               </a>
             </li>
 
              <li class="nav-item">
-              <a class="nav-link" href="ar-web-monitoring">
+              <a class="nav-link" href="accounting">
                 <i class="ni ni-chart-bar-32 text-success"></i>
-                <span class="nav-link-text">Website Monitoring</span>
+                <span class="nav-link-text">Accounting</span>
               </a>
             </li>
 
              <li class="nav-item">
-              <a class="nav-link" href="ar-user-control">
+              <a class="nav-link" href="reports">
                 <i class="ni ni-circle-08 text-default"></i>
-                <span class="nav-link-text">User Control</span>
+                <span class="nav-link-text">Reports</span>
               </a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="ar-user-authentication">
+              <a class="nav-link" href="contacts">
                 <i class="ni ni-key-25 text-gray-800"></i>
-                <span class="nav-link-text">User Authentication</span>
+                <span class="nav-link-text">Contacts</span>
               </a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="ar-transaction-overview">
+              <a class="nav-link" href="taxes">
                 <i class="ni ni-money-coins text-warning"></i>
-                <span class="nav-link-text">Transaction Overview</span>
+                <span class="nav-link-text">Taxes</span>
               </a>
             </li>
 
 
              <li class="nav-item">
-              <a class="nav-link" href="profile">
+              <a class="nav-link" href="settings">
                 <i class="ni ni-settings-gear-65 text-red"></i>
-                <span class="nav-link-text">Profile Settings</span>
+                <span class="nav-link-text">Settings</span>
               </a>
             </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="personal-settings">
-                <i class="fa fa-user-cog text-success"></i>
-                <span class="nav-link-text">Personal Settings</span>
-              </a>
-            </li>
-
           </ul>
           <!-- Divider -->
           <hr class="my-3">

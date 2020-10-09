@@ -21,11 +21,12 @@ class UserController extends Controller
         return view('user.index', compact('user'));
         // return view('user.index', compact('user'));
     }
-    
+
     public function logout() {
         Auth::logout();
-        return redirect('/');  
+        return redirect('/');
     }
+
 
     public function update(Request $request)
     {
@@ -53,12 +54,38 @@ class UserController extends Controller
     public function userPersonalSettings() {
         return view('dashboard.personal-settings');
     }
-    public function userSettings() {
-        return view('dashboard.settings');
-    }
+
 
     public function modalUsername() {
         return view('dashboard.modal');
+    }
+
+    public function userSales() {
+        return view('dashboard.sales');
+    }
+
+    public function userPurchases() {
+        return view('dashboard.purchases');
+    }
+
+    public function userAccounting() {
+        return view('dashboard.accounting');
+    }
+
+    public function userReports() {
+        return view('dashboard.reports');
+    }
+
+    public function userContacts() {
+        return view('dashboard.contacts');
+    }
+
+    public function userTaxes() {
+        return view('dashboard.taxes');
+    }
+
+    public function userSettings() {
+        return view('dashboard.settings');
     }
 
     //  END OF USER ROUTING FUNCTIONS
@@ -76,7 +103,7 @@ class UserController extends Controller
 
     public function companyOrganizationSettings() {
         return view('company.records.organization-settings');
-    }   
+    }
 
     public function companyChartsOfAccounts() {
         return view('company.records.records-charts-of-accounts');
